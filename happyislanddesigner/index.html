@@ -1,62 +1,43 @@
-<!DOCTYPE html>  
-<html>  
-  
-<head>  
-    <title>HTML Redirect</title>  
-    
-    <style>
-        body {
-            margin-top: 25px;
-            font-size: 21px;
-            text-align: center;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta property="og:title" content="Happy Island Designer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eugeneration.github.io/HappyIslandDesigner/" />
+    <meta property="og:image" content="https://eugeneration.github.io/HappyIslandDesigner/thumbnail.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:description" content="Plan your dream island map. Made for Animal Crossing: New Horizons. Draw terrain and paths, place buildings, and trace your in-game map." />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no"
+    />
+    <title>Happy Island Designer</title>
 
-            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-               -moz-animation: fadein 2s; /* Firefox < 16 */
-                -ms-animation: fadein 2s; /* Internet Explorer */
-                 -o-animation: fadein 2s; /* Opera < 12.1 */
-                    animation: fadein 2s;
-        }
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159461234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        @keyframes fadein {
-            0%   { opacity: 0; }
-            25%  { opacity: 0; }
-            100% { opacity: 1; }
-        }
+      gtag('config', 'UA-159461234-1');
+    </script>
 
-        /* Firefox < 16 */
-        @-moz-keyframes fadein {
-            0%   { opacity: 0; }
-            25%  { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        /* Safari, Chrome and Opera > 12.1 */
-        @-webkit-keyframes fadein {
-            0%   { opacity: 0; }
-            25%  { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        /* Internet Explorer */
-        @-ms-keyframes fadein {
-            0%   { opacity: 0; }
-            25%  { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        /* Opera < 12.1 */
-        @-o-keyframes fadein {
-            0%   { opacity: 0; }
-            25%  { opacity: 0; }
-            100% { opacity: 1; }
-        }
-    </style>
-</head>  
-  
-<body>  
-    <h1 style="text-align:center;color:green;">  
-         Redirecting to NH Island Designer  
-    </h1>  
-</body>  
-  
-</html>  
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="./static/font/TTNorms-Bold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+  </head>
+  <body>
+    <div class="hidden">
+      <p style="font-family: TTNorms;">.</p>
+    </div>
+    <div id="app">
+      <canvas id="canvas" resize></canvas>
+    </div>
+  <script src="bundle.js"></script></body>
+</html>
